@@ -11,18 +11,15 @@
   <form [formGroup]="studentForm" (ngSubmit)="CreateRecord()">
 
     <ion-item>
-      <ion-label position="floating">Name</ion-label>
-      <ion-input formControlName="Name"></ion-input>
+      <ion-input formControlName="Name" position="floating" label="Name"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Age</ion-label>
-      <ion-input formControlName="Age"></ion-input>
+      <ion-input formControlName="Age" position="floating" label="Age"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Address</ion-label>
-      <ion-input formControlName="Address"></ion-input>
+      <ion-input formControlName="Address" position="floating" label="Address"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -77,15 +74,15 @@
       </ion-card-header>
       <ion-card-content>
         <ion-item>
-          <ion-label><strong>Name</strong></ion-label>
+          <ion-input position="floating" label="Name"><strong></strong></ion-input>
           <ion-input type="text" [(ngModel)]="item.EditName"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label><strong>Age</strong></ion-label>
+          <ion-input position="floating" label="Age"><strong></strong></ion-input>
           <ion-input type="text" [(ngModel)]="item.EditAge"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label><strong>Address</strong></ion-label>
+          <ion-input position="floating" label="Address"><strong></strong></ion-input>
           <ion-input type="text" [(ngModel)]="item.EditAddress"></ion-input>
         </ion-item>
       </ion-card-content>
