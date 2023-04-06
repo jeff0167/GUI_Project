@@ -17,7 +17,7 @@ export class Tab1Page implements OnInit {
 
   studentList = [];
   studentData: StudentData;
-  studentForm: FormGroup; // hi, uses firestoe database med collection students{name,age,address}
+  studentForm: FormGroup; // hi, uses firestoe database with collection students{name,age,address}
 
   constructor(private firebaseService: FirebaseService,public fb: FormBuilder) {
     this.studentData = {} as StudentData;
