@@ -9,6 +9,10 @@ import { Contact } from '../interfaces/contact';
   styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
+
+  colors = ["#0ECDE8", "#8F2D56", "#FCB0C6" ]
+  colorIndex = -1;
+
   contacts: Contact[] = [
     {
       UserId: 1,
@@ -25,4 +29,11 @@ export class Tab1Page {
   ];
 
   constructor() {}
+
+  getColor(id){
+    // maybe see if it is dividable by 2,3,4 then choose the color from that or something
+    // the list should be sorted and at the left of the names should be the alpha bet, yes bet
+    return this.colors[id - 1];
+  }
+
 }

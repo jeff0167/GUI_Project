@@ -1,21 +1,6 @@
 <body>
   <ion-tabs>
-    <ion-header class="ion-no-border">
-      <ion-toolbar>
-        <ion-input expand="full" #searchinput class="searchBar"
-        placeholder="Search contacts" [(ngModel)]="search" (ionFocus)="searching = true" (ionBlur)="searching = false"
-        [class.active-search]="searching" [ngClass]="{'has-search-value': (search !== '' || searching),  'no-search-value': (search === '' && !searching)}">
-        <ion-icon name="search"></ion-icon></ion-input>
-  
-      <ion-icon class="options" slot="end" name="ellipsis-vertical-outline"></ion-icon>
-        <!-- <ion-buttons slot="end">
-          <ion-button fill="clear">Help</ion-button>
-        </ion-buttons> -->
-      </ion-toolbar>
-    </ion-header>
-
     <ion-tab-bar slot="bottom">
-
       <ion-grid>
         <ion-row>
           <ion-col size="6">

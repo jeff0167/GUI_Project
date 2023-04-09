@@ -12,4 +12,8 @@ export class TabsPage {
 
   constructor() {}
 
+  test(){
+    alert("Test alert");
+  }
+
 }

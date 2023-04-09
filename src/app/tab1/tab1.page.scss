@@ -7,9 +7,23 @@ ion-toolbar{
     // box-shadow: none !important;
     // border: none !important;
 
+    // all colors
+
+    // Primary colors
+    // "#FBB13C"       yellow
+    // "#F28705"       golden
+    // "#0ECDE8"       blue
+    // "#FCB0C6"       pink
+    // "#8F2D56"       purple
+    // "#02756A"       green
+
+    // Others
+    // "#A0041E"       red
+    // "#2CB14A"       bright green
+
     --ion-toolbar-color: #121212;
 
-    margin-left: 70px;
+    margin-left: 40px;
 
     ion-icon{
         transform: translate(0, 5px);
@@ -22,8 +36,32 @@ ion-toolbar{
 
 }
 
-ion-button{
+ion-item{
+    margin-left: 20px;
+
+    ion-text{         
+        display: flex;
+        align-items: left;
+        transform: translate(24px, 0);
+        width: 200px;
+    }
+}
+
+.contact{
+    --background: #121212;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    //background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.addContact{
     --background-hover:  #121212;
+
     ion-icon{
         transform: translate(0, 5px);
     }
@@ -35,10 +73,14 @@ ion-button{
     }
 }
 
-
-ion-header::after {
+ion-header::after  {
     background-image: none;
     }
+
+ion-button{
+    --background-hover:  #121212;
+    --box-shadow:none;
+}
 
 body{
     --ion-background-color:#121212;

@@ -1,18 +1,21 @@
 <body>
-<ion-header>
-  <ion-toolbar>
-    <ion-button routerLink="../tab2">
+  <app-searchbar [hasSearch]="true"></app-searchbar>
+  <ion-header>
+    <ion-toolbar>
+      <ion-button class="addContact" routerLink="../add-contact">
       <ion-icon name="person-add-outline" size="large" color="warning"></ion-icon>
       <ion-label color="warning">Add new contact</ion-label>
     </ion-button>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true" class="ion-padding">
 
   <ion-list>
     <ion-item *ngFor="let contact of contacts">
-      <p>{{contact.Name | titlecase}}</p>
+      <ion-button expand="full" class="contact" routerLink="../tab2">
+        <span [style.background-color]="getColor(contact.UserId)" class="dot"></span>
+        <ion-text [style.color]="getColor(contact.UserId)">{{contact.Name | titlecase}}</ion-text>
+      </ion-button>
     </ion-item>
   </ion-list>
 

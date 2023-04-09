@@ -34,6 +34,11 @@
     //--ion-font-family: NetflixSansRegular;
   }
 
+  // Don't now why, but the default seem to capitalize all text, so here I override it, works alright now it seems
+  *{
+    text-transform: none;
+  }
+
   .noShadow {
     box-shadow: none !important;
   }

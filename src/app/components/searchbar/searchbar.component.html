@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div *ngIf="hasSearch else backArrow">
+
+    <ion-input expand="full" #searchinput class="searchBar" placeholder="Search contacts"
+    [(ngModel)]="search" (ionFocus)="searching = true" (ionBlur)="searching = false"
+    [class.active-search]="searching" [ngClass]="{'has-search-value': (search !== '' || searching),  'no-search-value': (search === '' && !searching)}">
+    <ion-icon name="search"></ion-icon>
+  </ion-input>
+
+  <ion-icon (click)="test()" class="options" slot="end" name="ellipsis-vertical-outline"></ion-icon>
+ </div>
+ <ng-template #backArrow>
+  <ion-buttons slot="start">
+    <ion-back-button color="light" defaultHref="/tabs/tab1" text=""></ion-back-button>
+  </ion-buttons>
+  <ion-buttons slot="end">
+  </ion-buttons>
+</ng-template>
+
+  </ion-toolbar>
+</ion-header>

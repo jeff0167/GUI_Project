@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'tab1',
     loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
-  }
+  },
+  {
+    path: 'tabs/add-contact',
+    loadChildren: () => import('./tab1/add-contact/add-contact.module').then( m => m.AddContactPageModule)
+  },
 ];
 @NgModule({
   imports: [
