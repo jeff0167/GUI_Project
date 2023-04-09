@@ -1,20 +1,37 @@
-<ion-tabs>
+<body>
+  <ion-tabs>
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-input expand="full" #searchinput class="searchBar"
+        placeholder="Search contacts" [(ngModel)]="search" (ionFocus)="searching = true" (ionBlur)="searching = false"
+        [class.active-search]="searching" [ngClass]="{'has-search-value': (search !== '' || searching),  'no-search-value': (search === '' && !searching)}">
+        <ion-icon name="search"></ion-icon></ion-input>
+  
+      <ion-icon class="options" slot="end" name="ellipsis-vertical-outline"></ion-icon>
+        <!-- <ion-buttons slot="end">
+          <ion-button fill="clear">Help</ion-button>
+        </ion-buttons> -->
+      </ion-toolbar>
+    </ion-header>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon aria-hidden="true" name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
+    <ion-tab-bar slot="bottom">
 
-    <ion-tab-button tab="tab2">
-      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="tab3">
-      <ion-icon aria-hidden="true" name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-
-</ion-tabs>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-tab-button tab="tab1">
+              <ion-icon name="chatbubbles-outline" aria-label="Messages"></ion-icon>
+              <ion-label>Messages</ion-label>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-tab-button tab="tab2">
+              <ion-icon name="people-outline" aria-label="Contacts"></ion-icon>
+              <ion-label>Contacts</ion-label>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-tab-bar>
+  </ion-tabs>
+</body>

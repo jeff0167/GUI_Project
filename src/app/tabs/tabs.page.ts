@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
+  search: string;
+  searching: boolean;
+
   constructor() {}
 
 }

@@ -1,0 +1,45 @@
+ion-toolbar{
+     --ion-toolbar-background: #121212; // https://ionicframework.com/docs/theming/themes#application-colors    color the ion elements... so sad it must be done like this
+    // --ion-background-color: rgb(10,10,10);
+     //background-color: rgb(10,10,10);
+    // --ion-text-color: white;
+    // --ion-item-background: rgb(10,10,10);
+    // box-shadow: none !important;
+    // border: none !important;
+
+    --ion-toolbar-color: #121212;
+
+    margin-left: 70px;
+
+    ion-icon{
+        transform: translate(0, 5px);
+    }
+
+    ion-label{
+        //text-align: justify;
+        margin-left: 20px;
+    }
+
+}
+
+ion-button{
+    --background-hover:  #121212;
+    ion-icon{
+        transform: translate(0, 5px);
+    }
+
+    ion-label{
+        //text-align: justify;
+        margin-left: 20px;
+        transform: translate(0, 10px);
+    }
+}
+
+
+ion-header::after {
+    background-image: none;
+    }
+
+body{
+    --ion-background-color:#121212;
+}
