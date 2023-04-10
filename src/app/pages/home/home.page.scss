@@ -1,0 +1,32 @@
+.primary{
+    --background: #2d61bb;
+     margin-top: 220px;
+
+}
+
+ion-button{
+    --border-radius: 10px;
+    display: flex;
+    height: 60px;
+    margin: 20px;
+
+    font-size: 20px;
+}
+
+ion-text{
+    margin: 100px;
+}
+
+ion-title{
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    transform: translate(0,80px);
+    text-align: center;
+    position: relative;
+}
+
+.secondary{
+    --background: rgb(39, 39, 39);
+    color: #8786863f;
+}
