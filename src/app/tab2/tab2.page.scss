@@ -1,3 +1,87 @@
+ion-toolbar{
+    --ion-toolbar-background: #121212; // https://ionicframework.com/docs/theming/themes#application-colors    color the ion elements... so sad it must be done like this
+   // --ion-background-color: rgb(10,10,10);
+    //background-color: rgb(10,10,10);
+   // --ion-text-color: white;
+   // --ion-item-background: rgb(10,10,10);
+   // box-shadow: none !important;
+   // border: none !important;
+
+   // all colors
+
+   // Primary colors
+   // "#FBB13C"       yellow
+   // "#F28705"       golden
+   // "#0ECDE8"       blue
+   // "#FCB0C6"       pink
+   // "#8F2D56"       purple
+   // "#02756A"       green
+
+   // Others
+   // "#A0041E"       red
+   // "#2CB14A"       bright green
+
+   --ion-toolbar-color: #121212;
+
+   margin-left: 40px;
+
+   ion-icon{
+       transform: translate(0, 5px);
+   }
+
+   ion-label{
+       //text-align: justify;
+       margin-left: 20px;
+   }
+
+}
+
+ion-item{
+   margin-left: 20px;
+
+   ion-text{         
+       display: flex;
+       align-items: left;
+       transform: translate(24px, 0);
+       width: 200px;
+   }
+}
+
+.contact{
+   --background: #121212;
+}
+
+.dot {
+   height: 25px;
+   width: 25px;
+   //background-color: #bbbbbb;
+   border-radius: 50%;
+   display: inline-block;
+ }
+
+.addContact{
+   --background-hover:  #121212;
+
+   ion-icon{
+       transform: translate(0, 5px);
+   }
+
+   ion-label{
+       //text-align: justify;
+       margin-left: 20px;
+       transform: translate(0, 10px);
+   }
+}
+
 ion-header::after  {
-    background-image: none;
-    }
+   background-image: none;
+   }
+
+ion-button{
+   --background-hover:  #121212;
+   --box-shadow:none;
+}
+
+body{
+   --ion-background-color:#121212;
+}

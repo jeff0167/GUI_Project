@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddContactPage implements OnInit {
 
+  usernameId: string;
+  searching: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendContactRequest(){
+    alert("add test");
   }
 
 }

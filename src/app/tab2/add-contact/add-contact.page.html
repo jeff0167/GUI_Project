@@ -1,0 +1,15 @@
+<body>
+  <app-searchbar [hasSearch]="false"></app-searchbar>
+  <ion-content class="ion-padding">
+    <div class="description">
+      <h1>ADD CONTACT</h1>
+      <p>Add a new contact by entering their unique Username id</p>
+    </div>
+
+    <ion-input class="usernameInput" expand="full" #searchinput placeholder="Enter a Username id"
+      [(ngModel)]="usernameId" (ionFocus)="searching = true" (ionBlur)="searching = false" [class.active-search]="usernameId"
+      [ngClass]="{'has-search-value': (usernameId !== '' || searching),  'no-search-value': (usernameId === '' && !searching)}">
+    </ion-input>
+    <ion-button class="sendBtn" (click)="sendContactRequest()">Send request</ion-button>
+  </ion-content>
+</body>

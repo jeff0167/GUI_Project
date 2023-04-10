@@ -7,6 +7,6 @@ export const routes: Routes = [
   },
   {
     path: 'add-contact',
-    loadComponent: () => import('./tab1/add-contact/add-contact.page').then( m => m.AddContactPage)
+    loadComponent: () => import('./tab2/add-contact/add-contact.page').then( m => m.AddContactPage)
   },
 ];

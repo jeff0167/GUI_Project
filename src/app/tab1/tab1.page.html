@@ -2,14 +2,18 @@
   <app-searchbar [hasSearch]="true"></app-searchbar>
   <ion-header>
     <ion-toolbar>
-      <ion-button class="addContact" routerLink="../add-contact">
-      <ion-icon name="person-add-outline" size="large" color="warning"></ion-icon>
-      <ion-label color="warning">Add new contact</ion-label>
+      <ion-button class="addContact" routerLink="../predefine-message">
+      <ion-icon name="chatbubbles-outline" size="large" color="warning"></ion-icon>
+      <ion-icon name="add-outline" color="warning"></ion-icon>
+      <ion-label color="warning">Predefine message</ion-label>
     </ion-button>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true" class="ion-padding">
-
+  <div class="description">
+    <h1>SEND MESSAGE</h1>
+    <p>Select a contact to message</p>
+  </div>
   <ion-list>
     <ion-item *ngFor="let contact of contacts">
       <ion-button expand="full" class="contact" routerLink="../tab2">

@@ -1,0 +1,33 @@
+ion-header::after {
+  background-image: none;
+}
+
+.description{
+    margin-left: 41px;
+    margin-top: -30px;
+}
+
+.usernameInput{
+    --background: rgb(39, 39, 39);
+    border-radius: 8px;
+    --color: #F28705;
+    text-indent: 30px; // better hacks
+    z-index: 0;
+    // the caret color is green, and it doesn't seem like you can change it
+   // caret-color: #00c3ff;
+    
+}
+
+.sendBtn{
+    scale: 0.9;
+    --background: #02756A;
+    position: absolute;
+    right: 10px;
+    transform: translate(0,-46px);
+    z-index: 1;
+    text-indent: -1px; // also indented and have to undo it with yet another indent, I think
+}
+
+// .padding{
+//     padding: 0.35em; // hacks
+// }

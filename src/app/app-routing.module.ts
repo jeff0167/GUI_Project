@@ -11,8 +11,12 @@ const routes: Routes = [
     loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
   },
   {
+    path: 'tabs/predefine-message',
+    loadChildren: () => import('./tab1/predefine-message/predefine-message.module').then( m => m.PredefineMessagePageModule)
+  },
+  {
     path: 'tabs/add-contact',
-    loadChildren: () => import('./tab1/add-contact/add-contact.module').then( m => m.AddContactPageModule)
+    loadChildren: () => import('./tab2/add-contact/add-contact.module').then( m => m.AddContactPageModule)
   },
 ];
 @NgModule({
