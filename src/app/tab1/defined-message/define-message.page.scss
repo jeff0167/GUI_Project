@@ -38,6 +38,15 @@ ion-list {
   margin-left: 5px;
 }
 
+ion-icon{
+  cursor: pointer;
+}
+
+ion-icon:hover{
+  scale: 1.1;
+  transition: 0.5s;
+}
+
 .toHistoryBtn {
   margin-left: 20px;
   margin-bottom: 20px;

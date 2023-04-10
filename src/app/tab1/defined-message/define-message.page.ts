@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DefinedMessage } from 'src/app/interfaces/definedMessage';
+import { PlayMessageService } from 'src/app/services/play-message.service';
 
 @Component({
   selector: 'app-define-message',
@@ -29,7 +30,31 @@ export class DefineMessagePage implements OnInit {
     }
   ];
 
+  constructor(private messagePlayer: PlayMessageService){}
+
   ngOnInit() {
+  }
+
+  deleteMessage(){
+    alert("Delete ");
+  }
+
+  editMessage(){
+
+  }
+
+  playMessage(definedMessages: DefinedMessage){
+
+    const yo = definedMessages.Pattern.split(",");
+    const pattern: number[] = [];
+
+    for(let i = 0; i < yo.length; i++){
+      pattern.push(parseInt(yo[i]));
+    }
+
+   // alert(yo[0] + " " + yo[1] + " " + yo[2]);
+
+    this.messagePlayer.vibratePattern(pattern);
   }
 
 }

@@ -73,6 +73,17 @@ ion-item{
     }
 }
 
+.contact:hover{
+    scale: 1.05;
+    transition: 0.1s;
+}
+
+ion-toolbar:hover{
+    scale: 1.01;
+    transition: 0.1s;
+}
+
+
 ion-header::after  {
     background-image: none;
     }

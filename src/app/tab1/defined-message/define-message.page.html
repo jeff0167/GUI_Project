@@ -10,9 +10,9 @@
       <ion-text>{{definedMessage.Name | titlecase}}({{definedMessage.Pattern}})*{{definedMessage.PatternRepeat}} sound: {{definedMessage.Sound}}</ion-text>
       <!-- <ion-button expand="full" class="contact" routerLink="../tab1">
       </ion-button> -->
-      <ion-icon class="delete" slot="end" name="trash-outline"></ion-icon>
-      <ion-icon class="edit" slot="end" name="create-outline"></ion-icon>
-      <ion-icon class="play" slot="end" name="play-circle-outline"></ion-icon>
+      <ion-icon (click)="deleteMessage()" aria-label="Delete" class="delete" slot="end" name="trash-outline"></ion-icon>
+      <ion-icon (click)="editMessage()" aria-label="Edit" class="edit" slot="end" name="create-outline"></ion-icon>
+      <ion-icon (click)="playMessage(definedMessage)" aria-label="Play" class="play" slot="end" name="play-circle-outline"></ion-icon>
     </ion-item>
   </ion-list>
 

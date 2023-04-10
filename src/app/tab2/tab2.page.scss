@@ -77,6 +77,16 @@ ion-header::after  {
    background-image: none;
 }
 
+.contact:hover{
+    scale: 1.05;
+    transition: 0.1s;
+}
+
+ion-toolbar:hover{
+    scale: 1.01;
+    transition: 0.1s;
+}
+
 ion-button{
    --background-hover:  #121212;
    --box-shadow:none;
