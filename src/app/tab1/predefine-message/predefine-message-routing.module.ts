@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: PredefineMessagePage
+  },
+  {
+    path: 'define-message',
+    loadChildren: () => import('../defined-message/define-message.module').then( m => m.DefineMessagePageModule)
   }
 ];
 

@@ -1,0 +1,45 @@
+body {
+  // Primary colors
+  // "#FBB13C"       yellow
+  // "#F28705"       golden
+  // "#0ECDE8"       blue
+  // "#FCB0C6"       pink
+  // "#8F2D56"       purple
+  // "#02756A"       green
+
+  // Others
+  // "#A0041E"       red
+  // "#2CB14A"       bright green
+}
+
+.delete {
+  color: #a0041e;
+}
+
+.edit {
+  color: #f28705;
+}
+
+.play {
+  color: #02756a;
+}
+
+.description {
+  margin-left: 20px;
+  margin-top: -30px;
+
+  h1{
+    margin-bottom: -15px;
+  }
+
+}
+
+ion-list {
+  margin-left: 5px;
+}
+
+.toHistoryBtn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}

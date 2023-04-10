@@ -11,7 +11,6 @@ import { Contact } from '../interfaces/contact';
 export class Tab1Page {
 
   colors = ["#0ECDE8", "#8F2D56", "#FCB0C6" ]
-  colorIndex = -1;
 
   contacts: Contact[] = [
     {

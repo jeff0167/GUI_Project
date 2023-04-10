@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
-  }
+  },
+  {
+    path: 'predefine-message',
+    loadChildren: () => import('./predefine-message/predefine-message.module').then( m => m.PredefineMessagePageModule)
+  },
 ];
 
 @NgModule({

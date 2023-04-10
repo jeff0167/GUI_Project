@@ -23,3 +23,23 @@ body{
 .play{
     color:#02756A;
 }
+
+.description{
+    margin-left: 20px;
+    margin-top: -30px;
+
+    h1{
+        margin-bottom: -15px;
+    }
+}
+
+ion-list{
+    margin-left: 5px;
+}
+
+.toHistoryBtn{
+    --background: #02756A;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}

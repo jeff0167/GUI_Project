@@ -20,11 +20,15 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
-        path: 'add-contact',
+        path: 'tab1/add-contact',
         loadChildren: () => import('../tab2/add-contact/add-contact.module').then( m => m.AddContactPageModule)
       },
       {
-        path: 'tabs/predefine-message',
+        path: 'tab1/define-message',
+        loadChildren: () => import('../tab1/defined-message/define-message.module').then( m => m.DefineMessagePageModule)
+      },
+      {
+        path: 'tab2/predefine-message',
         loadChildren: () => import('../tab1/predefine-message/predefine-message.module').then( m => m.PredefineMessagePageModule)
       },
       {

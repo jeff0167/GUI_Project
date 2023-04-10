@@ -1,0 +1,21 @@
+<body>
+  <app-searchbar [hasSearch]="false"></app-searchbar>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="description">
+    <h1>EXISTING DEFINED MESSAGES</h1>
+    <p>See your list of defines messages and delete, edit and play them</p>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let definedMessage of definedMessages">
+      <ion-text>{{definedMessage.Name | titlecase}}({{definedMessage.Pattern}})*{{definedMessage.PatternRepeat}} sound: {{definedMessage.Sound}}</ion-text>
+      <!-- <ion-button expand="full" class="contact" routerLink="../tab1">
+      </ion-button> -->
+      <ion-icon class="delete" slot="end" name="trash-outline"></ion-icon>
+      <ion-icon class="edit" slot="end" name="create-outline"></ion-icon>
+      <ion-icon class="play" slot="end" name="play-circle-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+</body>
