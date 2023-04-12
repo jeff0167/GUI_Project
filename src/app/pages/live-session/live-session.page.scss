@@ -1,3 +1,56 @@
+// .primary{
+//     --background: #2d61bb;
+//      margin-top: 220px;
+// }
+
+// ion-button{
+//     --border-radius: 10px;
+//     display: flex;
+//     height: 60px;
+//     margin-left: 20px;
+//     margin-right: 20px;
+//     margin-bottom: 20px;
+
+//     font-size: 20px;
+// }
+
+// .description{
+//     transform: translate(0,30px);
+//     font-size: 15px;
+// }
+
+// ion-title{
+//     color: #ffffff;
+//     font-size: 30px;
+//     display: flex;
+//     transform: translate(0,80px);
+//     text-align: center;
+//     position: relative;
+// }
+
+// .card{
+//     cursor: pointer;
+//     //transform: translate(0,100px);
+//     background-image: linear-gradient(
+//         130deg,
+//         transparent 0% 33%,
+//         rgb(98, 0, 234) 66%,
+//         rgb(236, 64, 122) 83.5%,
+//         rgb(253, 216, 53) 100%
+//     );
+//     background-size: 300% 300%;
+//     height: 87%;
+//     width: 100%;
+// }
+
+// .card{
+//     border-radius: 10px;
+//     background-position: 100% 100%;
+//     transform: scale(0.90, 0.90);
+// }
+
+
+
 .primary{
     --background: #2d61bb;
      margin-top: 220px;
@@ -7,25 +60,24 @@ ion-button{
     --border-radius: 10px;
     display: flex;
     height: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
+    width: 280px;
+    margin: 10px;
+    transform: translate(50px,-10px);
     font-size: 20px;
 }
 
 .description{
-    transform: translate(0,30px);
-    font-size: 15px;
+    //transform: translate(0,30px);
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 ion-title{
     color: #ffffff;
     font-size: 30px;
     display: flex;
-    transform: translate(0,80px);
+    transform: translate(0,20px);
     text-align: center;
-    position: relative;
 }
 
 .card{
@@ -41,11 +93,10 @@ ion-title{
     background-size: 300% 300%;
     height: 87%;
     width: 100%;
-
 }
 
 .card{
     border-radius: 10px;
     background-position: 100% 100%;
-    transform: scale(0.90, 0.90);
+    transform: scale(0.70, 0.70);
 }

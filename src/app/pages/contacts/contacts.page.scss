@@ -1,3 +1,64 @@
+// ion-header::after  {
+//     background-image: none;
+// }
+
+// .primary{
+//     --background: #2d61bb;
+//      margin-top: 10px;
+
+// }
+
+// ion-button{
+//     --border-radius: 10px;
+//     display: flex;
+//     height: 60px;
+//     margin: 20px;
+
+//     font-size: 20px;
+// }
+
+// ion-card:hover{
+//     cursor: pointer;
+// }
+
+// ion-title{
+//     color: #ffffff;
+//     font-size: 30px;
+//     display: flex;
+//     transform: translate(0,80px);
+//     text-align: center;
+//     position: relative;
+//     font-weight: bold;
+    
+// }
+
+// ion-footer, ion-card-title{
+//     text-align: center;
+//     color: #ffffff;
+// }
+
+// ion-card{
+//     border-radius: 10px;
+//     --background: rgb(39, 39, 39);
+// }
+
+// .description{
+//     color: #ffffff;
+//     font-size: 20px;
+// }
+
+// ion-img{
+//    height: 60px;
+//    width: 60px;
+// }
+
+// .secondary{
+//     --background: rgb(39, 39, 39);
+//     color: #8786863f;
+// }
+
+
+
 ion-header::after  {
     background-image: none;
 }
@@ -5,15 +66,15 @@ ion-header::after  {
 .primary{
     --background: #2d61bb;
      margin-top: 10px;
-
 }
 
 ion-button{
     --border-radius: 10px;
     display: flex;
     height: 60px;
-    margin: 20px;
-
+    width: 280px;
+    margin: 10px;
+    transform: translate(50px,-10px);
     font-size: 20px;
 }
 
@@ -21,20 +82,13 @@ ion-card:hover{
     cursor: pointer;
 }
 
-ion-title{
-    color: #ffffff;
-    font-size: 30px;
-    display: flex;
-    transform: translate(0,80px);
-    text-align: center;
-    position: relative;
-    font-weight: bold;
-    
-}
-
 ion-footer, ion-card-title{
     text-align: center;
     color: #ffffff;
+}
+
+ion-grid{
+    margin-top: 35px;
 }
 
 ion-card{
@@ -52,9 +106,20 @@ ion-img{
    width: 60px;
 }
 
-
-
 .secondary{
     --background: rgb(39, 39, 39);
     color: #8786863f;
+}
+
+ion-title{
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    transform: translate(0,20px);
+    text-align: center;
+}
+
+.focusArea{
+    border-style: solid;
+    border-color: rgb(9, 126, 158);
 }

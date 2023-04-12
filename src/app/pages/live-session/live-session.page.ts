@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class LiveSessionPage implements OnInit {
 
-   selectedId: number = 0;
+  selectedId: number = 0;
 
   constructor(private route: ActivatedRoute) { 
 

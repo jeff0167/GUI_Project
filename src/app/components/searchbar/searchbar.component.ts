@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SearchbarComponent {
 
+  somename: string;
   search: string;
   searching: boolean;
 
@@ -17,4 +18,18 @@ export class SearchbarComponent {
   test(){
     alert("Test alert");
   }
+
+  cancel(){
+
+  }
+
+  confirm(){
+
+  }
+
+  onWillDismiss(event){
+
+  }
+
+  // need to use modal instead, pog yo
 }
