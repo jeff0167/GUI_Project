@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddContactPage implements OnInit {
 
-  usernameId: string;
+  usernameId: string = "";
   searching: boolean = false;
+
+  isOpen: boolean = false;
 
   constructor() { }
 
@@ -16,7 +18,23 @@ export class AddContactPage implements OnInit {
   }
 
   sendContactRequest(){
-    alert("add test");
+    // if contact id exist say it was sendt, otherwise say the id is not valid
+    this.isOpen = true;
+
+    setTimeout(() => {this.isOpen = false;}, 1000); 
   }
 
+  checkUsername(){
+    if(this.usernameId.length > 0) return false;
+
+    return true;
+  }
+
+  cancel(){
+
+  }
+
+  confirm(){
+
+  }
 }

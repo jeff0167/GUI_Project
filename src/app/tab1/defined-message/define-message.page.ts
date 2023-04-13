@@ -39,8 +39,8 @@ export class DefineMessagePage implements OnInit {
     alert("Delete ");
   }
 
-  editMessage(){
-
+  editMessage(){ // should pretty much have a pop-up as an component for easy reuse
+    alert("Edit");
   }
 
   playMessage(definedMessages: DefinedMessage){
