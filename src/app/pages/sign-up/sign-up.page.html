@@ -1,0 +1,51 @@
+<body>
+  <div class="container">
+
+    <form class="centered-div" [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" id="user" formControlName="Username"></ion-input>
+          <ng-container *ngFor="let validation of validationMessages.Username">
+            <div class="error-message" *ngIf="signUpForm.get('Username')
+                 .hasError(validation.type) 
+                 && (signUpForm.get('Username').dirty 
+                 && signUpForm.get('Username').touched)">
+              <ion-icon name="flash"></ion-icon>
+              {{ validation.message }} 
+            </div>
+          </ng-container>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input type="text" id="phonenumber" formControlName="Phone"></ion-input>
+          <ng-container *ngFor="let validation of validationMessages.Phone">
+            <div class="error-message" *ngIf="signUpForm.get('Phone')
+                 .hasError(validation.type) 
+                 && (signUpForm.get('Phone').dirty 
+                 && signUpForm.get('Phone').touched)">
+              <ion-icon name="flash"></ion-icon>
+              {{ validation.message }} 
+            </div>
+          </ng-container>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" id="password" formControlName="Password"></ion-input>
+          <ng-container *ngFor="let validation of validationMessages.Password">
+            <div class="error-message" *ngIf="signUpForm.get('Password')
+                 .hasError(validation.type) 
+                 && (signUpForm.get('Password').dirty 
+                 && signUpForm.get('Password').touched)">
+              <ion-icon name="flash"></ion-icon>
+              {{ validation.message }} 
+            </div>
+          </ng-container>
+      </ion-item>
+
+      <ion-button class="centered-div-bottom" type="submit">Sign Up</ion-button>
+    </form>
+    
+  </div>
+</body>

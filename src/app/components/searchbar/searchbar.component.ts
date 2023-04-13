@@ -16,7 +16,7 @@ export class SearchbarComponent {
   constructor() {}
 
   test(){
-    alert("Test alert");
+    alert("Option Test alert");
   }
 
   cancel(){

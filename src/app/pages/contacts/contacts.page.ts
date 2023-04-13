@@ -39,5 +39,5 @@ export class ContactsPage implements OnInit {
     this.selectedId = Math.floor(Math.random() * Number.MAX_SAFE_INTEGER); // only pick one that exist
 
   }
-
+  
 }
