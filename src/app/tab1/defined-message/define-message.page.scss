@@ -34,6 +34,12 @@ body {
 
 }
 
+.toHistoryBtn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
 ion-list {
   margin-left: 5px;
 }
@@ -45,10 +51,4 @@ ion-icon{
 ion-icon:hover{
   scale: 1.1;
   transition: 0.5s;
-}
-
-.toHistoryBtn {
-  margin-left: 20px;
-  margin-bottom: 20px;
-  margin-top: -10px;
 }

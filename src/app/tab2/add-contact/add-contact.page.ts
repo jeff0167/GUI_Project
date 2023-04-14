@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import contactData from 'src/app/jsonData/contact.json' 
 
 @Component({
   selector: 'app-add-contact',
@@ -22,6 +23,8 @@ export class AddContactPage implements OnInit {
     this.isOpen = true;
 
     setTimeout(() => {this.isOpen = false;}, 1000); 
+
+    contactData.push({"UserId": 10,"Name": "bob"})
   }
 
   checkUsername(){

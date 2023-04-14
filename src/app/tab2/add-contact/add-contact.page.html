@@ -10,7 +10,7 @@
       [(ngModel)]="usernameId" (ionFocus)="searching = true" (ionBlur)="searching = false" [class.active-search]="usernameId"
       [ngClass]="{'has-search-value': (usernameId !== '' || searching),  'no-search-value': (usernameId === '' && !searching)}">
     </ion-input>
-    <ion-button [disabled]="checkUsername() ? true : false" id="click-trigger" class="sendBtn" (click)="sendContactRequest()">Send request</ion-button>
+    <ion-button [disabled]="checkUsername() ? true : false" class="sendBtn" (click)="sendContactRequest()">Send request</ion-button>
 
     <ion-popover #popover [isOpen]="isOpen" (didDismiss)="isOpen = false">
       <ng-template>

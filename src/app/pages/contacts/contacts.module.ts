@@ -8,12 +8,15 @@ import { ContactsPageRoutingModule } from './contacts-routing.module';
 
 import { ContactsPage } from './contacts.page';
 
+import { ExploreContainerComponentModule } from 'src/app/explore-container/explore-container.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ContactsPageRoutingModule
+    ContactsPageRoutingModule, 
+    ExploreContainerComponentModule,
   ],
   declarations: [ContactsPage]
 })

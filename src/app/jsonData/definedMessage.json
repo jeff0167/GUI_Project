@@ -1,0 +1,21 @@
+
+[
+    {
+    "Name": "Bee",
+    "Pattern": "300,500,300,500",
+    "PatternRepeat": 10,
+    "Sound": "Bat"
+    },
+    {
+        "Name": "heart",
+        "Pattern": "700,500,700,300",
+        "PatternRepeat": 12,
+        "Sound": "Bat"
+    },
+    {
+        "Name": "Beat",
+        "Pattern": "600,200,700,300,800",
+        "PatternRepeat": 10,
+        "Sound": "Bat"
+    }
+]

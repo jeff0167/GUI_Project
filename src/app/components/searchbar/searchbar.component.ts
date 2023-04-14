@@ -13,10 +13,16 @@ export class SearchbarComponent {
 
   @Input() hasSearch: boolean;
 
-  constructor() {}
+  // can't you call on page load or something, every time a page is in view we reset the isOpen
+  isOpen: boolean = false;
 
-  test(){
-    alert("Option Test alert");
+  constructor() {
+  }
+
+  options(){
+    this.isOpen = true;
+
+    //setTimeout(() => {this.isOpen = false;}, 1000); 
   }
 
   cancel(){
@@ -31,5 +37,4 @@ export class SearchbarComponent {
 
   }
 
-  // need to use modal instead, pog yo
 }
